@@ -18,6 +18,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class AcodemyShopTest {
 
     WebDriver driver;
@@ -29,12 +30,22 @@ public class AcodemyShopTest {
         System.out.println("Pirms testa");
         driver = new ChromeDriver();
 
+//        FirefoxOptions browserOptions = new FirefoxOptions();
+//        browserOptions.setCapability("platformName", "Windows 11");
+//        browserOptions.setCapability("browserVersion", "latest");
+//        Map<String, Object> sauceOptions = new HashMap<>();
+//        sauceOptions.put("screenResolution", "2560x1600");
+//        sauceOptions.put("build", "Alina Test 123");
+//        sauceOptions.put("name", "Regession Test 2");
+//        browserOptions.setCapability("sauce:options", sauceOptions);
+
 //        ChromeOptions chromeOptions = new ChromeOptions();
-////     chromeOptions.setCapability("browserVersion", "103");
+//        chromeOptions.setCapability("browserVersion", "103");
 //        chromeOptions.setCapability("platformName", "Windows");
 //        chromeOptions.setCapability("se:name", "My simple test");
-//        driver = new RemoteWebDriver(new URL("http://192.168.1.123:4444"), chromeOptions);
-
+        //driver = new RemoteWebDriver(new URL("https://oauth-aliina.platonova-8a12a:2eba8807-e9bd-454b-b921-c4b323b5316e@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), browserOptions);
+        //driver = new RemoteWebDriver(new URL("https://oauth-aliina.platonova-8a12a:2eba8807-e9bd-454b-b921-c4b323b5316e@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), ChromeOptions);
+        //driver = new RemoteWebDriver(new URL("http://192.168.1.61:4444/"), chromeOptions);
         driver.manage().window().maximize();
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
